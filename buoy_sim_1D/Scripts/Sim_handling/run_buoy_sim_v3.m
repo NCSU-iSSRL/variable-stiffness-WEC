@@ -16,7 +16,7 @@ wave_amplitude_sweep = (0.5:0.25:10)./2;
 %wave_period_sweep = 4.5:1:19.5;
 wave_period_sweep = 2.5:1:18.5;
 
-useParallel = true;
+useParallel = false;
 
 %%% sequential
 if ~useParallel
