@@ -5,16 +5,16 @@ CD = 0.5;
 buoy_density = 881;
 buoy_height = 17.7;
 buoy_radius = 3.5;
-%spring_const = 97e3;
-%damping = 300e3;
+spring_const = 97e3;
+damping = 300e3;
 
 qCol = 0;
 qRow = 0;
 powerMatrixMechanical = [];
 powerMatrixElectrical = [];
-wave_amplitude_sweep = (0.5:0.25:10)./2;
+wave_amplitude_sweep = 1%(0.5:0.25:10)./2;
 %wave_period_sweep = 4.5:1:19.5;
-wave_period_sweep = 2.5:1:18.5;
+wave_period_sweep = 5%2.5:1:18.5;
 
 useParallel = false;
 
