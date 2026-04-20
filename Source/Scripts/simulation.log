@@ -1,0 +1,31 @@
+
+WEC-Sim Input From Standard wecSimInputFile.m Of Case Directory... 
+WEC-Sim: An open-source code for simulating wave energy converters
+Version: 6.0
+
+Initializing the Simulation Class...
+	Case Dir: C:\Users\Carson\OneDrive - North Carolina State University\iSSRL\Research\variable-stiffness-WEC\Source\Scripts 
+{Error using <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('simulationClass/checkInputs', 'Z:\NCSU_Desktop\WEC-Sim\source\objects\simulationClass.m', 128)" style="font-weight:bold">simulationClass/checkInputs</a> (<a href="matlab: opentoline('Z:\NCSU_Desktop\WEC-Sim\source\objects\simulationClass.m',128,0)">line 128</a>)
+The simMechanics file, C:\Users\Carson\OneDrive - North Carolina State University\iSSRL\Research\variable-stiffness-WEC\Source\Scripts\csi_cylinder.slx, does not exist in the case directory
+
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('initializeWecSim', 'Z:\NCSU_Desktop\WEC-Sim\source\functions\initializeWecSim.m', 111)" style="font-weight:bold">initializeWecSim</a> (<a href="matlab: opentoline('Z:\NCSU_Desktop\WEC-Sim\source\functions\initializeWecSim.m',111,0)">line 111</a>)
+simu.checkInputs();
+
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run', 'C:\Program Files\MATLAB\R2024a\toolbox\matlab\lang\run.m', 112)" style="font-weight:bold">run</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024a\toolbox\matlab\lang\run.m',112,0)">line 112</a>)
+evalin('caller', strcat(scriptStem, ';'));
+
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('wecSim', 'Z:\NCSU_Desktop\WEC-Sim\source\wecSim.m', 43)" style="font-weight:bold">wecSim</a> (<a href="matlab: opentoline('Z:\NCSU_Desktop\WEC-Sim\source\wecSim.m',43,0)">line 43</a>)
+run('initializeWecSim');
+} 
+HP_unstretched_length*0.2
+
+ans =
+
+    0.0762
+
+wecSim
+WEC-Sim: An open-source code for simulating wave energy converters
+Version: 6.0
+
+Initializing the Simulation Class...
+	Case Dir: C:\Users\Carson\OneDrive - North Carolina State University\iSSRL\Research\variable-stiffness-WEC\wecSim_projects\plunger2_buoy 

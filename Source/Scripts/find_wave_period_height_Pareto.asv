@@ -1,0 +1,48 @@
+% Pull in wave data from CDIP buoy
+% For each unique wave period bin, find the highest observed wave height
+%  to generate a Pareto-like frontier.
+% Use this frontier to inform which wave conditions to simulate.
+clear;clc;
+
+dataFolder = 'E:\CDIP_buoy_data\';
+
+files = dir([dataFolder, '192*.nc']);
+
+figure(1)
+clf
+hold on
+xlabel('Wave period (s)')
+ylabel('Sig. wave height (m)')
+
+wavePeriodBinWidth = 0.05; % s, width of wave period bin to seach for highest observed wave height
+
+for q = 1:length(files)
+    disp(files(q).name)
+    
+    historicalDataFile = [files(q).folder, '\', files(q).name];
+    time = ncread(historicalDataFile, 'waveTime'); % seconds since epoch
+    sigWaveHeight = ncread(historicalDataFile, 'waveHs'); % m
+    waveAvgPeriod = ncread(historicalDataFile, 'waveTa'); % s
+    stationID = string(ncread(historicalDataFile, 'metaStationName')'); % s
+    stationNum = str2double(files(q).name(1:3));
+
+    plot(waveAvgPeriod, sigWaveHeight, '.')
+
+    wavePeriodSearchBin = [min(waveAvgPeriod), min(waveAvgPeriod) + wavePeriodBinWidth];
+    maxWaveAvgPeriod = max(waveAvgPeriod);
+    maxWaveHeightResults = [];
+
+    while wavePeriodSearchBin(2) <= maxWaveAvgPeriod
+        wavePeriods = waveAvgPeriod((waveAvgPeriod >= wavePeriodSearchBin(1)) & (waveAvgPeriod < wavePeriodSearchBin(2)));
+        waveHeights = sigWaveHeight((waveAvgPeriod >= wavePeriodSearchBin(1)) & (waveAvgPeriod < wavePeriodSearchBin(2)));
+        [maxWaveHeight, ind] = max(waveHeights);
+        if isempty(maxWaveHeight)
+            maxWaveHeight = nan;
+        end
+        
+        maxWaveHeightResults(end+1, :) = [wavePeriods(, maxWaveHeight];
+        
+        wavePeriodSearchBin = wavePeriodSearchBin + wavePeriodBinWidth;
+    end
+    plot(maxWaveHeightResults(:,1), maxWaveHeightResults(:,2))
+end
