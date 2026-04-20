@@ -1,0 +1,61 @@
+
+WEC-Sim Input From Standard wecSimInputFile.m Of Case Directory... 
+WEC-Sim: An open-source code for simulating wave energy converters
+Version: 6.0
+
+Initializing the Simulation Class...
+	Case Dir: C:\Users\cmmcguir\OneDrive - North Carolina State University\iSSRL\Research\variable-stiffness-WEC\wecSim_projects\plunger1_buoy 
+Elapsed time is 0.071476 seconds.
+
+WEC-Sim Pre-processing ...   
+[Warning: Because water depth is specified in the wecSimInputFile, the water depth from the BEM data is ignored] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('waveClass/setWaterDepth', 'C:\Users\cmmcguir\Documents\WEC-Sim\source\objects\waveClass.m', 571)" style="font-weight:bold">waveClass/setWaterDepth</a> (<a href="matlab: opentoline('C:\Users\cmmcguir\Documents\WEC-Sim\source\objects\waveClass.m',571,0)">line 571</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('waveClass/setup', 'C:\Users\cmmcguir\Documents\WEC-Sim\source\objects\waveClass.m', 253)" style="font-weight:bold">waveClass/setup</a> (<a href="matlab: opentoline('C:\Users\cmmcguir\Documents\WEC-Sim\source\objects\waveClass.m',253,0)">line 253</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('initializeWecSim', 'C:\Users\cmmcguir\Documents\WEC-Sim\source\functions\initializeWecSim.m', 256)" style="font-weight:bold">initializeWecSim</a> (<a href="matlab: opentoline('C:\Users\cmmcguir\Documents\WEC-Sim\source\functions\initializeWecSim.m',256,0)">line 256</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run', 'C:\Program Files\MATLAB\R2024a\toolbox\matlab\lang\run.m', 112)" style="font-weight:bold">run</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024a\toolbox\matlab\lang\run.m',112,0)">line 112</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('wecSim', 'C:\Users\cmmcguir\Documents\WEC-Sim\source\wecSim.m', 43)" style="font-weight:bold">wecSim</a> (<a href="matlab: opentoline('C:\Users\cmmcguir\Documents\WEC-Sim\source\wecSim.m',43,0)">line 43</a>)] 
+[Warning: "body.morisonElement.z" is not used for "body.morisonElement.option = 1". Check body 1 element 1] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('initializeWecSim', 'C:\Users\cmmcguir\Documents\WEC-Sim\source\functions\initializeWecSim.m', 365)" style="font-weight:bold">initializeWecSim</a> (<a href="matlab: opentoline('C:\Users\cmmcguir\Documents\WEC-Sim\source\functions\initializeWecSim.m',365,0)">line 365</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run', 'C:\Program Files\MATLAB\R2024a\toolbox\matlab\lang\run.m', 112)" style="font-weight:bold">run</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024a\toolbox\matlab\lang\run.m',112,0)">line 112</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('wecSim', 'C:\Users\cmmcguir\Documents\WEC-Sim\source\wecSim.m', 43)" style="font-weight:bold">wecSim</a> (<a href="matlab: opentoline('C:\Users\cmmcguir\Documents\WEC-Sim\source\wecSim.m',43,0)">line 43</a>)] 
+Elapsed time is 0.127240 seconds.
+
+WEC-Sim Simulation Settings:
+	Start Time                     (sec) = 0
+	End Time                       (sec) = 90
+	Time Step Size                 (sec) = 0.01
+	Ramp Function Time             (sec) = 30
+	 Number of Time Steps     = 9000 
+
+Wave Environment: 
+	Wave Type                            = Regular Waves (Constant Hydrodynamic Coefficients)
+	Wave Height, height (m)                   = 0.08
+	Wave Period, period (sec)                 = 1.25
+
+List of Body: Number of Bodies = 1 
+
+	***** Body Number 1, Name: body1 *****
+	Body CG                          (m) = [-0,-0,-0.19]
+	Body Mass                       (kg) = 7.5 
+	Body Moments of Inertia       (kgm2) = [0.0412,0.0412,0.0281]
+	Body Products of Inertia      (kgm2) = [0,0,0]
+
+List of PTO(s): Number of PTOs = 1 
+
+	***** PTO Name: PTO1 *****
+	PTO Stiffness           (N/m;Nm/rad) = 0
+	PTO Damping           (Ns/m;Nsm/rad) = 10
+
+List of Constraint(s): Number of Constraints = 2 
+
+	***** Constraint Name: Constraint1 *****
+
+	***** Constraint Name: Constraint2 *****
+
+
+Simulating the WEC device defined in the SimMechanics model C:\Users\cmmcguir\OneDrive - North Carolina State University\iSSRL\Research\variable-stiffness-WEC\wecSim_projects\plunger1_buoy\plunger1.slx...   
+Elapsed time is 0.003591 seconds.
+Elapsed time is 16.039417 seconds.
+
+Post-processing and saving...   
+Elapsed time is 0.802830 seconds.

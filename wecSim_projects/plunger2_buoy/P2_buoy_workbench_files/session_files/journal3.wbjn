@@ -1,0 +1,27 @@
+# encoding: utf-8
+# 2024 R2
+SetScriptVersion(Version="24.2.133")
+system1 = GetSystem(Name="Geom")
+geometry1 = system1.GetContainer(ComponentName="Geometry")
+geometry1.SetFile(FilePath="C:/Users/cmmcguir/OneDrive - North Carolina State University/iSSRL/Research/variable-stiffness-WEC/wecSim_projects/plunger2_buoy/geometry/plunger2_simple.SLDPRT")
+string1 = geometry1.GetGeometryFileAndSaveData()
+system2 = GetSystem(Name="AQW")
+modelComponent1 = system2.GetComponent(Name="Model")
+modelComponent1.Refresh()
+model1 = system2.GetContainer(ComponentName="Model")
+model1.Edit()
+geometry1.SetFile(
+    FilePath="C:/Users/cmmcguir/OneDrive - North Carolina State University/iSSRL/Research/variable-stiffness-WEC/wecSim_projects/plunger2_buoy/geometry/plunger2_simple.SLDPRT",
+    PlugInName="SOLIDWORKS[14628]")
+string2 = geometry1.GetGeometryFileAndSaveData()
+model1.Edit()
+geometryComponent1 = system1.GetComponent(Name="Geometry")
+geometryComponent1.Reset()
+geometry1.SetFile(
+    FilePath="C:/Users/cmmcguir/OneDrive - North Carolina State University/iSSRL/Research/variable-stiffness-WEC/wecSim_projects/plunger2_buoy/geometry/plunger2_simple.SLDPRT",
+    PlugInName="SOLIDWORKS[14628]")
+string3 = geometry1.GetGeometryFileAndSaveData()
+modelComponent1.Refresh()
+model1.Edit()
+Save(Overwrite=True)
+Save(Overwrite=True)

@@ -1,0 +1,373 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Storage>
+  <Project Version="9.1" />
+  <Addins>
+    <addin-list valType="String">[Ansys.ParameterManager.ParameterManagerAddin, Ansys.AQWA.CoreAddin, Ansys.Dpdb.DpdbAddin, Ansys.Rep.RepAddin, Ansys.DesignModeler.Core.Addin]</addin-list>
+    <Addin Name="Ansys.ParameterManager.ParameterManagerAddin" Version="7.3" />
+    <Addin Name="Ansys.AQWA.CoreAddin" Version="21.0.0" />
+    <Addin Name="Ansys.Dpdb.DpdbAddin" Version="4.2">
+      <is-optional-on-resume valType="Boolean">true</is-optional-on-resume>
+    </Addin>
+    <Addin Name="Ansys.Rep.RepAddin" Version="23.2.1.1">
+      <is-optional-on-resume valType="Boolean">true</is-optional-on-resume>
+    </Addin>
+    <Addin Name="Ansys.DesignModeler.Core.Addin" Version="21.2.0.0" />
+  </Addins>
+  <Containers>
+    <container-map valType="String">{"Scopes": Ansys.ParameterManager.ParameterManagerAddin:scopes, "Geometry": Ansys.DesignModeler.Core.Addin:Geometry, "Model": Ansys.AQWA.CoreAddin:AqwaModel, "Setup": Ansys.AQWA.CoreAddin:AqwaSetup, "Solution": Ansys.AQWA.CoreAddin:AqwaSolution, "Results": Ansys.AQWA.CoreAddin:AqwaResults, "Model 1": Ansys.AQWA.CoreAddin:AqwaModel, "Setup 1": Ansys.AQWA.CoreAddin:AqwaSetup, "Solution 1": Ansys.AQWA.CoreAddin:AqwaSolution, "Results 1": Ansys.AQWA.CoreAddin:AqwaResults, "Setup 2": Ansys.AQWA.CoreAddin:AqwaSetup, "Solution 2": Ansys.AQWA.CoreAddin:AqwaSolution, "Results 2": Ansys.AQWA.CoreAddin:AqwaResults}</container-map>
+    <static-container-ids valType="String">{"Scopes": Scopes}</static-container-ids>
+    <Container Name="Scopes" Version="1.0">
+      <container-type valType="String">Ansys.ParameterManager.ParameterManagerAddin:scopes</container-type>
+      <static-id valType="String">Scopes</static-id>
+      <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
+      <deleted-sources valType="String">[]</deleted-sources>
+      <last-updated valType="Int64">0</last-updated>
+      <last-modified-by-usage valType="String">{"Extrinsic": 1492, "Input": 1493, "Output": 1492}</last-modified-by-usage>
+      <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
+      <contains-significant-data valType="Boolean">false</contains-significant-data>
+      <Object Name="/Scopes/GlobalScope:GlobalScope" Version="1.0">
+        <class-type valType="String">GlobalScope</class-type>
+        <object-name valType="String">GlobalScope</object-name>
+        <member-data valType="String">{"DisplayText": "GlobalScope", "_fieldExpressionValidationContext": None, "functionProviders": [], "Parent": None}</member-data>
+      </Object>
+    </Container>
+    <Container Name="Geometry" Version="1.0">
+      <container-type valType="String">Ansys.DesignModeler.Core.Addin:Geometry</container-type>
+      <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
+      <deleted-sources valType="String">[]</deleted-sources>
+      <last-updated valType="Int64">2151</last-updated>
+      <last-modified-by-usage valType="String">{"Extrinsic": 2755, "Input": 2149, "Output": 2149}</last-modified-by-usage>
+      <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
+      <unique-system-dir valType="String">AQW</unique-system-dir>
+      <contains-significant-data valType="Boolean">true</contains-significant-data>
+      <Object Name="/Geometry/SimulationGeneratedMesh:MeshFileObject" Version="1.0">
+        <class-type valType="String">SimulationGeneratedMesh</class-type>
+        <object-name valType="String">MeshFileObject</object-name>
+        <member-data valType="String">{"DisplayText": "MeshFileObject", "TransferFile": None}</member-data>
+      </Object>
+      <Object Name="/Geometry/Geometry:GeometryDataObject" Version="1.0">
+        <class-type valType="String">Geometry</class-type>
+        <object-name valType="String">GeometryDataObject</object-name>
+        <member-data valType="String">{"DisplayText": "GeometryDataObject", "_geometryFileRelativePath": r"dp0\AQW\DM\AQW.agdb", "_geometryTeamcenterConnection": None, "_geometryPlugInName": "", "GeomFileReference": $$5bbe926f-1bf4-4a93-b379-a36ce6e9f11c, "GeometryImportSolidBodies": True, "GeometryImportSurfaceBodies": True, "GeometryImportLineBodies": True, "GeometryImportParameters": "CADImportParameterType_Independent", "GeometryImportParametersFilter": "", "GeometryImportCadAttributes": True, "GeometryImportCadAttributesFilter": "", "GeometryImportNamedSelections": True, "GeometryImportNamedSelectionsFilter": "", "GeometryImportMaterialProperties": True, "GeometryImportAnalysisType": "AnalysisType_3D", "GeometryImportCadAssociativity": True, "GeometryImportCoordinateSystems": True, "GeometryImportCoordinateSystemsFilter": "", "GeometryImportWorkPoints": True, "GeometryImportSavePartFile": False, "GeometryImportImportUsingInstances": True, "GeometryImportSmartUpdate": True, "GeometryImportPhysicsDefinition": False, "GeometryImportComparePartsOnUpdate": "ComparePartsMethod_None", "GeometryImportComparePartsTolerance": "ComparePartsTolerance_Tight", "GeometryImportProcessEnclosures": True, "GeometryImportDecomposeDisjointFaces": True, "GeometryImportMixedResolutionOption": "MixedImport_None", "GeometryImportWeightclass": "ImportWeightclass_Heavyweight", "GeometryImportFacetQuality": "PlugInFacetQuality_Source", "GeometryImportFlattenAssembly": True, "GeometryImportCleanGeometryOnImport": False, "GeometryImportStitchSurfacesOnImport": "StitchPreference_None", "GeometryImportStitchTolerance": 1E-07, "GeometryImportSpaceClaimExplodeUnsharedComponents": True, "Guid": "edfae54b-0ca3-4898-8439-ab55d7fcee5f", "ObjectState": 0, "UpstreamConnections": {}, "ImportedFeatures": {}, "IsSpaceClaimGeometry": False, "IsDiscoveryGeometry": False, "IsDiscoveryModeEnabled": False, "_isModelerModeEnabled": False, "AreParametersOutOfDate": False, "RegisteredExternalFilesInfo": {"$$5bbe926f-1bf4-4a93-b379-a36ce6e9f11c": {"FilePathInDM": r"C:\Users\cmmcguir\Documents\WEC-Sim\Projects\plunger1_buoy\P1_buoy_workbench_files\dp0\AQW\DM\AQW.agdb", "FilePathAfterRepair": r"C:\Users\cmmcguir\Documents\WEC-Sim\Projects\plunger1_buoy\P1_buoy_workbench_files\dp0\AQW\DM\AQW.agdb", "IsFileRepaired": False, "CadSourceType": "DesignModeler"}}, "AreParametersMigratedFromLegacyDatabaseImport": False}</member-data>
+        <properties-setByUserFlag-data valType="String">["ObjectState"]</properties-setByUserFlag-data>
+      </Object>
+      <Object Name="/Geometry/TransferData:Geometry" Version="1.0">
+        <class-type valType="String">TransferData</class-type>
+        <object-name valType="String">Geometry</object-name>
+        <member-data valType="String">{"DisplayText": "Geometry", "ConnectionKeys": ["be4a512e-e72d-411d-b9f7-f2c811304ef7", "2dfce2f7-eced-41a0-bd05-cac3d1d9a89d"], "Data": $$a0f7fc17-157f-475c-b030-e0256f193a80}</member-data>
+      </Object>
+    </Container>
+    <Container Name="Model" Version="1.0">
+      <container-type valType="String">Ansys.AQWA.CoreAddin:AqwaModel</container-type>
+      <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
+      <deleted-sources valType="String">[]</deleted-sources>
+      <last-updated valType="Int64">2173</last-updated>
+      <last-modified-by-usage valType="String">{"Extrinsic": 2216, "Input": 2216, "Output": 2216}</last-modified-by-usage>
+      <outputs-generated-by-type valType="String">{"AqwaModel": 2181}</outputs-generated-by-type>
+      <last-update-regen-times valType="String">{"Preferences": 0, "ToolbarExp": 0, "FileTypesContainer": 0, "FileContainer": 0, "Messages": 0, "Parameters": 0, "Schematic": 0, "ReportDataContainer": 0, "Graphics": 0, "Units": 0, "DpdbContainer": 0, "RepContainer": 0, "Scopes": 0, "Geometry": 2151, "Model": 2173, "Setup": 0, "Solution": 0, "Results": 0}</last-update-regen-times>
+      <unique-system-dir valType="String">AQW</unique-system-dir>
+      <contains-significant-data valType="Boolean">true</contains-significant-data>
+      <Object Name="/Model/AqwaModel:ModelDataObject" Version="1.0">
+        <class-type valType="String">AqwaModel</class-type>
+        <object-name valType="String">ModelDataObject</object-name>
+        <member-data valType="String">{"DisplayText": "ModelDataObject", "Caption": "Model", "coordinate": "A3", "GeometrySelected": True, "GeometryAttached": True, "ModelHash": "ce015567-a432-4053-9367-19b050729b37", "StableHash": "64914c4eModel", "SystemName": "Hydrodynamic Diffraction", "GeomUpdate": 2149, "GeomUsedUpdate": 0, "ProjectName": "Hydrodynamic Response", "AQDBDatabaseFilesWritten": True, "DuplicateFiles": "", "LeaveHashes": False, "RemoveList": [], "LivestateProcessedRemoveList": [], "PhysicsType": "Transient", "AnalysisType": "Hydrodynamic Response", "SolverType": "Aqwa", "ImportFile": False, "ModelDesignPoint": 0}</member-data>
+        <custom-data>
+          <Directory valType="String">C:\Users\cmmcguir\Documents\WEC-Sim\Projects\plunger1_buoy\P1_buoy_workbench_files\dp0\AQW\AQW</Directory>
+          <FileReference valType="String">d648a175-9179-4989-b2ec-56e6029babef</FileReference>
+          <FileReferenceMesh valType="String">ea3d1331-5cd2-466b-a20b-22760443c036</FileReferenceMesh>
+          <CellState valType="String">4</CellState>
+          <RefreshChanges valType="String">0</RefreshChanges>
+          <ParameterValueModified valType="String">False</ParameterValueModified>
+          <value-keys valType="String">{"Directory": System.String, "FileReference": System.String, "FileReferenceMesh": System.String, "CellState": System.Int32, "RefreshChanges": System.Int32, "ParameterValueModified": System.Boolean}</value-keys>
+        </custom-data>
+      </Object>
+      <Object Name="/Model/ContainerConnections:ModelContainerConnections" Version="1.0">
+        <class-type valType="String">ContainerConnections</class-type>
+        <object-name valType="String">ModelContainerConnections</object-name>
+        <member-data valType="String">{"DisplayText": "ModelContainerConnections", "Connections": {"Geometry": {"$$a0f7fc17-157f-475c-b030-e0256f193a80": {"Geometry": ["be4a512e-e72d-411d-b9f7-f2c811304ef7"]}}}}</member-data>
+      </Object>
+    </Container>
+    <Container Name="Setup" Version="1.0">
+      <container-type valType="String">Ansys.AQWA.CoreAddin:AqwaSetup</container-type>
+      <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
+      <deleted-sources valType="String">[]</deleted-sources>
+      <last-updated valType="Int64">0</last-updated>
+      <last-modified-by-usage valType="String">{"Extrinsic": 1920, "Input": 1915, "Output": 1915}</last-modified-by-usage>
+      <outputs-generated-by-type valType="String">{"AqwaSetup": 2171}</outputs-generated-by-type>
+      <last-update-regen-times valType="String">{"Preferences": 0, "ToolbarExp": 0, "FileTypesContainer": 0, "FileContainer": 0, "Messages": 0, "Parameters": 0, "Schematic": 0, "ReportDataContainer": 0, "Graphics": 0, "Units": 0, "DpdbContainer": 0, "RepContainer": 0, "Scopes": 0, "Geometry": 2151, "Model": 2173, "Setup": 0, "Solution": 0, "Results": 0}</last-update-regen-times>
+      <unique-system-dir valType="String">AQW</unique-system-dir>
+      <contains-significant-data valType="Boolean">true</contains-significant-data>
+      <Object Name="/Setup/AqwaSetup:SetupDataObject" Version="1.0">
+        <class-type valType="String">AqwaSetup</class-type>
+        <object-name valType="String">SetupDataObject</object-name>
+        <member-data valType="String">{"DisplayText": "SetupDataObject", "Caption": "Setup", "coordinate": "A4", "ResultType": "Hydrodynamic Response", "FileReference": None, "StableHash": "c9bae452Setup", "StaticOnly": False, "CopiedFromHash": "??", "SourceHash": "", "PhysicsType": "Transient", "AnalysisType": "Hydrodynamic Response", "SolverType": "Aqwa"}</member-data>
+        <custom-data>
+          <OldStableHash valType="String">c9bae452Setup</OldStableHash>
+          <CellState valType="String">7</CellState>
+          <ParameterValueModified valType="String">False</ParameterValueModified>
+          <value-keys valType="String">{"OldStableHash": System.String, "CellState": System.Int32, "ParameterValueModified": System.Boolean}</value-keys>
+        </custom-data>
+      </Object>
+    </Container>
+    <Container Name="Solution" Version="1.0">
+      <container-type valType="String">Ansys.AQWA.CoreAddin:AqwaSolution</container-type>
+      <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
+      <deleted-sources valType="String">[]</deleted-sources>
+      <last-updated valType="Int64">0</last-updated>
+      <last-modified-by-usage valType="String">{"Extrinsic": 1931, "Input": 1929, "Output": 1926}</last-modified-by-usage>
+      <outputs-generated-by-type valType="String">{"AqwaSolution": 2172}</outputs-generated-by-type>
+      <last-update-regen-times valType="String">{"Preferences": 0, "ToolbarExp": 0, "FileTypesContainer": 0, "FileContainer": 0, "Messages": 0, "Parameters": 0, "Schematic": 0, "ReportDataContainer": 0, "Graphics": 0, "Units": 0, "DpdbContainer": 0, "RepContainer": 0, "Scopes": 0, "Geometry": 2151, "Model": 2173, "Setup": 0, "Solution": 0, "Results": 0}</last-update-regen-times>
+      <unique-system-dir valType="String">AQW</unique-system-dir>
+      <contains-significant-data valType="Boolean">true</contains-significant-data>
+      <Object Name="/Solution/AqwaSolution:SolutionDataObject" Version="1.0">
+        <class-type valType="String">AqwaSolution</class-type>
+        <object-name valType="String">SolutionDataObject</object-name>
+        <member-data valType="String">{"DisplayText": "SolutionDataObject", "Caption": "Analysis", "coordinate": "A5", "FileReference": None, "StableHash": "e7806a88Solution", "PhysicsType": "Transient", "AnalysisType": "Hydrodynamic Response", "SolverType": "Aqwa", "DownstreamConnectionKeys": []}</member-data>
+        <custom-data>
+          <OldStableHash valType="String">e7806a88Solution</OldStableHash>
+          <CellState valType="String">7</CellState>
+          <value-keys valType="String">{"OldStableHash": System.String, "CellState": System.Int32}</value-keys>
+        </custom-data>
+      </Object>
+      <Object Name="/Solution/ComponentSolveSettingsForAddin:ComponentSolveSettingsForAddin" Version="1.0">
+        <class-type valType="String">ComponentSolveSettingsForAddin</class-type>
+        <object-name valType="String">ComponentSolveSettingsForAddin</object-name>
+        <member-data valType="String">{"DisplayText": "ComponentSolveSettingsForAddin", "UpdateOption": "Foreground", "RsmUserString": None, "ConfiguredQueue": {"OptionIcons": None, "OptionLabels": "Local", "Options": "Local", "ReadOnlyOptions": None, "OptionFeatureFlags": None, "OptionFilterFlags": None, "OptionLicenseFlags": None, "Value": "Local"}, "RsmJobName": "Workbench", "EnablePolling": True, "PollingInterval": "120 [s]", "ExecutionMode": "Serial", "NumberOfProcesses": 2}</member-data>
+      </Object>
+      <Object Name="/Solution/ComponentSettingsForRsmDpUpdate:ComponentSettingsForRsmDpUpdate" Version="1.0">
+        <class-type valType="String">ComponentSettingsForRsmDpUpdate</class-type>
+        <object-name valType="String">ComponentSettingsForRsmDpUpdate</object-name>
+        <member-data valType="String">{"DisplayText": "ComponentSettingsForRsmDpUpdate", "SerialOnly": False, "UseLimitOnNumberOfCores": False, "LimitOnNumberOfCores": 2}</member-data>
+      </Object>
+      <Object Name="/Solution/ExpertProperties:ExpertProperties" Version="1.0">
+        <class-type valType="String">ExpertProperties</class-type>
+        <object-name valType="String">ExpertProperties</object-name>
+        <member-data valType="String">{"DisplayText": "ExpertProperties", "ImportantNote": "These options are visible because a development environment variable is set", "ExpertPropertiesString": "", "EnableDebug": False, "EnableValidation": False, "EnableTesting": False, "EnableErrorReporting": True, "EnableWarningReporting": True, "EnableInfoReporting": False, "EnableFileBasedCommunication": False, "EnableSocketCommunication": False, "EnableFailureCauseReporting": True}</member-data>
+      </Object>
+      <Object Name="/Solution/ExternalDataSetupForAqwa:ExternalDataSetupForAqwa" Version="1.0">
+        <class-type valType="String">ExternalDataSetupForAqwa</class-type>
+        <object-name valType="String">ExternalDataSetupForAqwa</object-name>
+        <member-data valType="String">{"DisplayText": "ExternalDataSetupForAqwa", "DataConnections": [], "TransferDataObject": None}</member-data>
+      </Object>
+    </Container>
+    <Container Name="Results" Version="1.0">
+      <container-type valType="String">Ansys.AQWA.CoreAddin:AqwaResults</container-type>
+      <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
+      <deleted-sources valType="String">[]</deleted-sources>
+      <last-updated valType="Int64">0</last-updated>
+      <last-modified-by-usage valType="String">{"Extrinsic": 1941, "Input": 1941, "Output": 1941}</last-modified-by-usage>
+      <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
+      <last-update-regen-times valType="String">{"Preferences": 0, "ToolbarExp": 0, "FileTypesContainer": 0, "FileContainer": 0, "Messages": 0, "Parameters": 0, "Schematic": 0, "ReportDataContainer": 0, "Graphics": 0, "Units": 0, "DpdbContainer": 0, "RepContainer": 0, "Scopes": 0, "Geometry": 2151, "Model": 0, "Setup": 0, "Solution": 0, "Results": 0}</last-update-regen-times>
+      <unique-system-dir valType="String">AQW</unique-system-dir>
+      <contains-significant-data valType="Boolean">true</contains-significant-data>
+      <Object Name="/Results/AqwaResults:ResultsDataObject" Version="1.0">
+        <class-type valType="String">AqwaResults</class-type>
+        <object-name valType="String">ResultsDataObject</object-name>
+        <member-data valType="String">{"DisplayText": "ResultsDataObject", "Caption": "Results", "FileReference": None, "StableHash": "54b7563bResults", "PhysicsType": "Transient", "AnalysisType": "Hydrodynamic Response", "SolverType": "Aqwa"}</member-data>
+        <custom-data>
+          <CellState valType="String">7</CellState>
+          <ParameterValueModified valType="String">False</ParameterValueModified>
+          <value-keys valType="String">{"CellState": System.Int32, "ParameterValueModified": System.Boolean}</value-keys>
+        </custom-data>
+      </Object>
+    </Container>
+    <Container Name="Model 1" Version="1.0">
+      <container-type valType="String">Ansys.AQWA.CoreAddin:AqwaModel</container-type>
+      <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
+      <deleted-sources valType="String">[]</deleted-sources>
+      <last-updated valType="Int64">2704</last-updated>
+      <last-modified-by-usage valType="String">{"Extrinsic": 2717, "Input": 2617, "Output": 2617}</last-modified-by-usage>
+      <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
+      <last-update-regen-times valType="String">{"Preferences": 0, "ToolbarExp": 0, "FileTypesContainer": 0, "FileContainer": 0, "Messages": 0, "Parameters": 0, "Schematic": 0, "ReportDataContainer": 0, "Graphics": 0, "Units": 0, "DpdbContainer": 0, "RepContainer": 0, "Scopes": 0, "Geometry": 2151, "Model": 2173, "Setup": 0, "Solution": 0, "Results": 0, "Model 1": 2619, "Setup 1": 2620, "Solution 1": 2630, "Results 1": 2631, "Setup 2": 2701, "Solution 2": 0, "Results 2": 0}</last-update-regen-times>
+      <unique-system-dir valType="String">AQW-1</unique-system-dir>
+      <contains-significant-data valType="Boolean">true</contains-significant-data>
+      <Object Name="/Model 1/AqwaModel:ModelDataObject" Version="1.0">
+        <class-type valType="String">AqwaModel</class-type>
+        <object-name valType="String">ModelDataObject</object-name>
+        <member-data valType="String">{"DisplayText": "ModelDataObject", "Caption": "Model", "coordinate": "C3", "GeometrySelected": True, "GeometryAttached": True, "ModelHash": "5084858b-1200-4a06-ba19-53fa8cbe0333", "StableHash": "1cbb6cc2Model", "SystemName": "Hydrodynamic Diffraction", "GeomUpdate": 2149, "GeomUsedUpdate": 0, "ProjectName": "Hydrodynamic Response", "AQDBDatabaseFilesWritten": True, "DuplicateFiles": "", "LeaveHashes": False, "RemoveList": [], "LivestateProcessedRemoveList": [], "PhysicsType": "Modal", "AnalysisType": "Hydrodynamic Diffraction", "SolverType": "Aqwa", "ImportFile": False, "ModelDesignPoint": 0}</member-data>
+        <custom-data>
+          <Directory valType="String">C:\Users\cmmcguir\Documents\WEC-Sim\Projects\plunger1_buoy\P1_buoy_workbench_files\dp0\AQW-1\AQW</Directory>
+          <FileReference valType="String">09afd2d0-643d-4042-b4d8-cafcbb05b101</FileReference>
+          <FileReferenceMesh valType="String">d0b26d50-906e-42d0-b7c9-16152d294fd1</FileReferenceMesh>
+          <CellState valType="String">0</CellState>
+          <RefreshChanges valType="String">0</RefreshChanges>
+          <ParameterValueModified valType="String">False</ParameterValueModified>
+          <value-keys valType="String">{"Directory": System.String, "FileReference": System.String, "FileReferenceMesh": System.String, "CellState": System.Int32, "RefreshChanges": System.Int32, "ParameterValueModified": System.Boolean}</value-keys>
+        </custom-data>
+      </Object>
+      <Object Name="/Model 1/ContainerConnections:ModelContainerConnections" Version="1.0">
+        <class-type valType="String">ContainerConnections</class-type>
+        <object-name valType="String">ModelContainerConnections</object-name>
+        <member-data valType="String">{"DisplayText": "ModelContainerConnections", "Connections": {"Geometry": {"$$a0f7fc17-157f-475c-b030-e0256f193a80": {"Geometry": ["2dfce2f7-eced-41a0-bd05-cac3d1d9a89d"]}}}}</member-data>
+      </Object>
+    </Container>
+    <Container Name="Setup 1" Version="1.0">
+      <container-type valType="String">Ansys.AQWA.CoreAddin:AqwaSetup</container-type>
+      <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
+      <deleted-sources valType="String">[]</deleted-sources>
+      <last-updated valType="Int64">2705</last-updated>
+      <last-modified-by-usage valType="String">{"Extrinsic": 2499, "Input": 2499, "Output": 2499}</last-modified-by-usage>
+      <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
+      <last-update-regen-times valType="String">{"Preferences": 0, "ToolbarExp": 0, "FileTypesContainer": 0, "FileContainer": 0, "Messages": 0, "Parameters": 0, "Schematic": 0, "ReportDataContainer": 0, "Graphics": 0, "Units": 0, "DpdbContainer": 0, "RepContainer": 0, "Scopes": 0, "Geometry": 2151, "Model": 2173, "Setup": 0, "Solution": 0, "Results": 0, "Model 1": 2704, "Setup 1": 2620, "Solution 1": 2630, "Results 1": 2631, "Setup 2": 2701, "Solution 2": 0, "Results 2": 0}</last-update-regen-times>
+      <unique-system-dir valType="String">AQW-1</unique-system-dir>
+      <contains-significant-data valType="Boolean">true</contains-significant-data>
+      <Object Name="/Setup 1/AqwaSetup:SetupDataObject" Version="1.0">
+        <class-type valType="String">AqwaSetup</class-type>
+        <object-name valType="String">SetupDataObject</object-name>
+        <member-data valType="String">{"DisplayText": "SetupDataObject", "Caption": "Setup", "coordinate": "C4", "ResultType": "Hydrodynamic Diffraction", "FileReference": None, "StableHash": "19ef41f0Setup", "StaticOnly": False, "CopiedFromHash": "??", "SourceHash": "", "PhysicsType": "Modal", "AnalysisType": "Hydrodynamic Diffraction", "SolverType": "Aqwa"}</member-data>
+        <custom-data>
+          <OldStableHash valType="String">19ef41f0Setup</OldStableHash>
+          <CellState valType="String">0</CellState>
+          <ParameterValueModified valType="String">False</ParameterValueModified>
+          <value-keys valType="String">{"OldStableHash": System.String, "CellState": System.Int32, "ParameterValueModified": System.Boolean}</value-keys>
+        </custom-data>
+      </Object>
+    </Container>
+    <Container Name="Solution 1" Version="1.0">
+      <container-type valType="String">Ansys.AQWA.CoreAddin:AqwaSolution</container-type>
+      <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
+      <deleted-sources valType="String">[]</deleted-sources>
+      <last-updated valType="Int64">2749</last-updated>
+      <last-modified-by-usage valType="String">{"Extrinsic": 2744, "Input": 2744, "Output": 2744}</last-modified-by-usage>
+      <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
+      <last-update-regen-times valType="String">{"Preferences": 0, "ToolbarExp": 0, "FileTypesContainer": 0, "FileContainer": 0, "Messages": 0, "Parameters": 0, "Schematic": 0, "ReportDataContainer": 0, "Graphics": 0, "Units": 0, "DpdbContainer": 0, "RepContainer": 0, "Scopes": 0, "Geometry": 2151, "Model": 2173, "Setup": 0, "Solution": 0, "Results": 0, "Model 1": 2704, "Setup 1": 2705, "Solution 1": 2728, "Results 1": 2748, "Setup 2": 2732, "Solution 2": 2736, "Results 2": 2711}</last-update-regen-times>
+      <unique-system-dir valType="String">AQW-1</unique-system-dir>
+      <contains-significant-data valType="Boolean">true</contains-significant-data>
+      <Object Name="/Solution 1/AqwaSolution:SolutionDataObject" Version="1.0">
+        <class-type valType="String">AqwaSolution</class-type>
+        <object-name valType="String">SolutionDataObject</object-name>
+        <member-data valType="String">{"DisplayText": "SolutionDataObject", "Caption": "Analysis", "coordinate": "C5", "FileReference": None, "StableHash": "512a1d40Solution", "PhysicsType": "Modal", "AnalysisType": "Hydrodynamic Diffraction", "SolverType": "Aqwa", "DownstreamConnectionKeys": []}</member-data>
+        <custom-data>
+          <OldStableHash valType="String">512a1d40Solution</OldStableHash>
+          <CellState valType="String">0</CellState>
+          <value-keys valType="String">{"OldStableHash": System.String, "CellState": System.Int32}</value-keys>
+        </custom-data>
+      </Object>
+      <Object Name="/Solution 1/ComponentSolveSettingsForAddin:ComponentSolveSettingsForAddin" Version="1.0">
+        <class-type valType="String">ComponentSolveSettingsForAddin</class-type>
+        <object-name valType="String">ComponentSolveSettingsForAddin</object-name>
+        <member-data valType="String">{"DisplayText": "ComponentSolveSettingsForAddin", "UpdateOption": "Foreground", "RsmUserString": None, "ConfiguredQueue": {"OptionIcons": None, "OptionLabels": "Local", "Options": "Local", "ReadOnlyOptions": None, "OptionFeatureFlags": None, "OptionFilterFlags": None, "OptionLicenseFlags": None, "Value": "Local"}, "RsmJobName": "Workbench", "EnablePolling": True, "PollingInterval": "120 [s]", "ExecutionMode": "Serial", "NumberOfProcesses": 2}</member-data>
+      </Object>
+      <Object Name="/Solution 1/ComponentSettingsForRsmDpUpdate:ComponentSettingsForRsmDpUpdate" Version="1.0">
+        <class-type valType="String">ComponentSettingsForRsmDpUpdate</class-type>
+        <object-name valType="String">ComponentSettingsForRsmDpUpdate</object-name>
+        <member-data valType="String">{"DisplayText": "ComponentSettingsForRsmDpUpdate", "SerialOnly": False, "UseLimitOnNumberOfCores": False, "LimitOnNumberOfCores": 2}</member-data>
+      </Object>
+      <Object Name="/Solution 1/ExpertProperties:ExpertProperties" Version="1.0">
+        <class-type valType="String">ExpertProperties</class-type>
+        <object-name valType="String">ExpertProperties</object-name>
+        <member-data valType="String">{"DisplayText": "ExpertProperties", "ImportantNote": "These options are visible because a development environment variable is set", "ExpertPropertiesString": "", "EnableDebug": False, "EnableValidation": False, "EnableTesting": False, "EnableErrorReporting": True, "EnableWarningReporting": True, "EnableInfoReporting": False, "EnableFileBasedCommunication": False, "EnableSocketCommunication": False, "EnableFailureCauseReporting": True}</member-data>
+      </Object>
+      <Object Name="/Solution 1/ExternalDataSetupForAqwa:ExternalDataSetupForAqwa" Version="1.0">
+        <class-type valType="String">ExternalDataSetupForAqwa</class-type>
+        <object-name valType="String">ExternalDataSetupForAqwa</object-name>
+        <member-data valType="String">{"DisplayText": "ExternalDataSetupForAqwa", "DataConnections": [], "TransferDataObject": None}</member-data>
+      </Object>
+    </Container>
+    <Container Name="Results 1" Version="1.0">
+      <container-type valType="String">Ansys.AQWA.CoreAddin:AqwaResults</container-type>
+      <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
+      <deleted-sources valType="String">[]</deleted-sources>
+      <last-updated valType="Int64">2750</last-updated>
+      <last-modified-by-usage valType="String">{"Extrinsic": 2745, "Input": 2745, "Output": 2745}</last-modified-by-usage>
+      <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
+      <last-update-regen-times valType="String">{"Preferences": 0, "ToolbarExp": 0, "FileTypesContainer": 0, "FileContainer": 0, "Messages": 0, "Parameters": 0, "Schematic": 0, "ReportDataContainer": 0, "Graphics": 0, "Units": 0, "DpdbContainer": 0, "RepContainer": 0, "Scopes": 0, "Geometry": 2151, "Model": 2173, "Setup": 0, "Solution": 0, "Results": 0, "Model 1": 2704, "Setup 1": 2705, "Solution 1": 2749, "Results 1": 2748, "Setup 2": 2732, "Solution 2": 2736, "Results 2": 2711}</last-update-regen-times>
+      <unique-system-dir valType="String">AQW-1</unique-system-dir>
+      <contains-significant-data valType="Boolean">true</contains-significant-data>
+      <Object Name="/Results 1/AqwaResults:ResultsDataObject" Version="1.0">
+        <class-type valType="String">AqwaResults</class-type>
+        <object-name valType="String">ResultsDataObject</object-name>
+        <member-data valType="String">{"DisplayText": "ResultsDataObject", "Caption": "Results", "FileReference": None, "StableHash": "ba7847feResults", "PhysicsType": "Modal", "AnalysisType": "Hydrodynamic Diffraction", "SolverType": "Aqwa"}</member-data>
+        <custom-data>
+          <CellState valType="String">0</CellState>
+          <ParameterValueModified valType="String">False</ParameterValueModified>
+          <value-keys valType="String">{"CellState": System.Int32, "ParameterValueModified": System.Boolean}</value-keys>
+        </custom-data>
+      </Object>
+    </Container>
+    <Container Name="Setup 2" Version="1.0">
+      <container-type valType="String">Ansys.AQWA.CoreAddin:AqwaSetup</container-type>
+      <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
+      <deleted-sources valType="String">[]</deleted-sources>
+      <last-updated valType="Int64">2751</last-updated>
+      <last-modified-by-usage valType="String">{"Extrinsic": 2665, "Input": 2659, "Output": 2659}</last-modified-by-usage>
+      <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
+      <last-update-regen-times valType="String">{"Preferences": 0, "ToolbarExp": 0, "FileTypesContainer": 0, "FileContainer": 0, "Messages": 0, "Parameters": 0, "Schematic": 0, "ReportDataContainer": 0, "Graphics": 0, "Units": 0, "DpdbContainer": 0, "RepContainer": 0, "Scopes": 0, "Geometry": 2151, "Model": 2173, "Setup": 0, "Solution": 0, "Results": 0, "Model 1": 2704, "Setup 1": 2705, "Solution 1": 2749, "Results 1": 2750, "Setup 2": 2732, "Solution 2": 2736, "Results 2": 2711}</last-update-regen-times>
+      <unique-system-dir valType="String">AQW-2</unique-system-dir>
+      <contains-significant-data valType="Boolean">true</contains-significant-data>
+      <Object Name="/Setup 2/AqwaSetup:SetupDataObject" Version="1.0">
+        <class-type valType="String">AqwaSetup</class-type>
+        <object-name valType="String">SetupDataObject</object-name>
+        <member-data valType="String">{"DisplayText": "SetupDataObject", "Caption": "Setup", "coordinate": "D4", "ResultType": "Hydrodynamic Response", "FileReference": None, "StableHash": "41b311ddSetup", "StaticOnly": False, "CopiedFromHash": "??", "SourceHash": "512a1d40Solution", "PhysicsType": "Transient", "AnalysisType": "Hydrodynamic Response", "SolverType": "Aqwa"}</member-data>
+        <custom-data>
+          <OldStableHash valType="String">41b311ddSetup</OldStableHash>
+          <CellState valType="String">0</CellState>
+          <ParameterValueModified valType="String">False</ParameterValueModified>
+          <value-keys valType="String">{"OldStableHash": System.String, "CellState": System.Int32, "ParameterValueModified": System.Boolean}</value-keys>
+        </custom-data>
+      </Object>
+    </Container>
+    <Container Name="Solution 2" Version="1.0">
+      <container-type valType="String">Ansys.AQWA.CoreAddin:AqwaSolution</container-type>
+      <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
+      <deleted-sources valType="String">[]</deleted-sources>
+      <last-updated valType="Int64">2752</last-updated>
+      <last-modified-by-usage valType="String">{"Extrinsic": 2746, "Input": 2746, "Output": 2746}</last-modified-by-usage>
+      <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
+      <last-update-regen-times valType="String">{"Preferences": 0, "ToolbarExp": 0, "FileTypesContainer": 0, "FileContainer": 0, "Messages": 0, "Parameters": 0, "Schematic": 0, "ReportDataContainer": 0, "Graphics": 0, "Units": 0, "DpdbContainer": 0, "RepContainer": 0, "Scopes": 0, "Geometry": 2151, "Model": 2173, "Setup": 0, "Solution": 0, "Results": 0, "Model 1": 2704, "Setup 1": 2705, "Solution 1": 2749, "Results 1": 2750, "Setup 2": 2751, "Solution 2": 2736, "Results 2": 2711}</last-update-regen-times>
+      <unique-system-dir valType="String">AQW-2</unique-system-dir>
+      <contains-significant-data valType="Boolean">true</contains-significant-data>
+      <Object Name="/Solution 2/AqwaSolution:SolutionDataObject" Version="1.0">
+        <class-type valType="String">AqwaSolution</class-type>
+        <object-name valType="String">SolutionDataObject</object-name>
+        <member-data valType="String">{"DisplayText": "SolutionDataObject", "Caption": "Analysis", "coordinate": "D5", "FileReference": None, "StableHash": "3b35d5dcSolution", "PhysicsType": "Transient", "AnalysisType": "Hydrodynamic Response", "SolverType": "Aqwa", "DownstreamConnectionKeys": []}</member-data>
+        <custom-data>
+          <OldStableHash valType="String">3b35d5dcSolution</OldStableHash>
+          <CellState valType="String">0</CellState>
+          <value-keys valType="String">{"OldStableHash": System.String, "CellState": System.Int32}</value-keys>
+        </custom-data>
+      </Object>
+      <Object Name="/Solution 2/ComponentSolveSettingsForAddin:ComponentSolveSettingsForAddin" Version="1.0">
+        <class-type valType="String">ComponentSolveSettingsForAddin</class-type>
+        <object-name valType="String">ComponentSolveSettingsForAddin</object-name>
+        <member-data valType="String">{"DisplayText": "ComponentSolveSettingsForAddin", "UpdateOption": "Foreground", "RsmUserString": None, "ConfiguredQueue": {"OptionIcons": None, "OptionLabels": "Local", "Options": "Local", "ReadOnlyOptions": None, "OptionFeatureFlags": None, "OptionFilterFlags": None, "OptionLicenseFlags": None, "Value": "Local"}, "RsmJobName": "Workbench", "EnablePolling": True, "PollingInterval": "120 [s]", "ExecutionMode": "Serial", "NumberOfProcesses": 2}</member-data>
+      </Object>
+      <Object Name="/Solution 2/ComponentSettingsForRsmDpUpdate:ComponentSettingsForRsmDpUpdate" Version="1.0">
+        <class-type valType="String">ComponentSettingsForRsmDpUpdate</class-type>
+        <object-name valType="String">ComponentSettingsForRsmDpUpdate</object-name>
+        <member-data valType="String">{"DisplayText": "ComponentSettingsForRsmDpUpdate", "SerialOnly": False, "UseLimitOnNumberOfCores": False, "LimitOnNumberOfCores": 2}</member-data>
+      </Object>
+      <Object Name="/Solution 2/ExpertProperties:ExpertProperties" Version="1.0">
+        <class-type valType="String">ExpertProperties</class-type>
+        <object-name valType="String">ExpertProperties</object-name>
+        <member-data valType="String">{"DisplayText": "ExpertProperties", "ImportantNote": "These options are visible because a development environment variable is set", "ExpertPropertiesString": "", "EnableDebug": False, "EnableValidation": False, "EnableTesting": False, "EnableErrorReporting": True, "EnableWarningReporting": True, "EnableInfoReporting": False, "EnableFileBasedCommunication": False, "EnableSocketCommunication": False, "EnableFailureCauseReporting": True}</member-data>
+      </Object>
+      <Object Name="/Solution 2/ExternalDataSetupForAqwa:ExternalDataSetupForAqwa" Version="1.0">
+        <class-type valType="String">ExternalDataSetupForAqwa</class-type>
+        <object-name valType="String">ExternalDataSetupForAqwa</object-name>
+        <member-data valType="String">{"DisplayText": "ExternalDataSetupForAqwa", "DataConnections": [], "TransferDataObject": None}</member-data>
+      </Object>
+    </Container>
+    <Container Name="Results 2" Version="1.0">
+      <container-type valType="String">Ansys.AQWA.CoreAddin:AqwaResults</container-type>
+      <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
+      <deleted-sources valType="String">[]</deleted-sources>
+      <last-updated valType="Int64">2753</last-updated>
+      <last-modified-by-usage valType="String">{"Extrinsic": 2747, "Input": 2747, "Output": 2747}</last-modified-by-usage>
+      <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
+      <last-update-regen-times valType="String">{"Preferences": 0, "ToolbarExp": 0, "FileTypesContainer": 0, "FileContainer": 0, "Messages": 0, "Parameters": 0, "Schematic": 0, "ReportDataContainer": 0, "Graphics": 0, "Units": 0, "DpdbContainer": 0, "RepContainer": 0, "Scopes": 0, "Geometry": 2151, "Model": 2173, "Setup": 0, "Solution": 0, "Results": 0, "Model 1": 2704, "Setup 1": 2705, "Solution 1": 2749, "Results 1": 2750, "Setup 2": 2751, "Solution 2": 2752, "Results 2": 2711}</last-update-regen-times>
+      <unique-system-dir valType="String">AQW-2</unique-system-dir>
+      <contains-significant-data valType="Boolean">true</contains-significant-data>
+      <Object Name="/Results 2/AqwaResults:ResultsDataObject" Version="1.0">
+        <class-type valType="String">AqwaResults</class-type>
+        <object-name valType="String">ResultsDataObject</object-name>
+        <member-data valType="String">{"DisplayText": "ResultsDataObject", "Caption": "Results", "FileReference": None, "StableHash": "48c948ebResults", "PhysicsType": "Transient", "AnalysisType": "Hydrodynamic Response", "SolverType": "Aqwa"}</member-data>
+        <custom-data>
+          <CellState valType="String">0</CellState>
+          <ParameterValueModified valType="String">False</ParameterValueModified>
+          <value-keys valType="String">{"CellState": System.Int32, "ParameterValueModified": System.Boolean}</value-keys>
+        </custom-data>
+      </Object>
+    </Container>
+  </Containers>
+</Storage>

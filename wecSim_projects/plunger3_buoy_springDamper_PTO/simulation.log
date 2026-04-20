@@ -1,0 +1,58 @@
+
+WEC-Sim Input From Standard wecSimInputFile.m Of Case Directory... 
+WEC-Sim: An open-source code for simulating wave energy converters
+Version: 6.1
+
+Initializing the Simulation Class...
+	Case Dir: C:\Users\cmmcguir\OneDrive - North Carolina State University\iSSRL\Research\variable-stiffness-WEC\wecSim_projects\plunger3_buoy_springDamper_PTO 
+
+	 location undefined, set halfway between follower.location and base.location 
+Elapsed time is 0.046114 seconds.
+
+WEC-Sim Pre-processing ...   
+Elapsed time is 0.062286 seconds.
+
+WEC-Sim Simulation Settings:
+	Start Time                     (sec) = 0
+	End Time                       (sec) = 60
+	Time Step Size                 (sec) = 0.01
+	Ramp Function Time             (sec) = 15
+	 Number of Time Steps     = 6000 
+
+Wave Environment: 
+	Wave Type                            = Regular Waves (Constant Hydrodynamic Coefficients)
+	Wave Height, height (m)                   = 0.13
+	Wave Period, period (sec)                 = 1.5
+
+List of Body: Number of Bodies = 1 
+
+	***** Body Number 1, Name: body1 *****
+	Body CG                          (m) = [-0,0,-0.18]
+	Body Mass                       (kg) = 8.838 
+	Body Moments of Inertia       (kgm2) = [0.114166,0.114166,0.0809977]
+	Body Products of Inertia      (kgm2) = [0,0,0]
+
+List of PTO(s): Number of PTOs = 1 
+
+	***** PTO Name: PTO1 *****
+	PTO Stiffness           (N/m;Nm/rad) = 200
+	PTO Damping           (Ns/m;Nsm/rad) = 50
+
+List of Constraint(s): Number of Constraints = 2 
+
+	***** Constraint Name: Constraint1 *****
+
+	***** Constraint Name: Constraint2 *****
+
+
+Simulating the WEC device defined in the SimMechanics model C:\Users\cmmcguir\OneDrive - North Carolina State University\iSSRL\Research\variable-stiffness-WEC\wecSim_projects\plunger3_buoy_springDamper_PTO\plunger3_SDPTO.slx...   
+Elapsed time is 0.007605 seconds.
+{Error using <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('wecSim', 'C:\Users\cmmcguir\Documents\WEC-Sim-6.1.2\source\wecSim.m', 43)" style="font-weight:bold">wecSim</a> (<a href="matlab: opentoline('C:\Users\cmmcguir\Documents\WEC-Sim-6.1.2\source\wecSim.m',43,0)">line 43</a>)
+Derivative of state 'plunger3_SDPTO.Rotational.CONSTRAINT_Revolute_Joint.Rz.w' in block '<a href="matlab:open_and_hilite_hyperlink ('plunger3_SDPTO/Rotational/CONSTRAINT (Revolute Joint)','error')">plunger3_SDPTO/Rotational/CONSTRAINT (Revolute Joint)</a>' at time 0.0 is not finite. The
+simulation will be stopped. There may be a singularity in the solution.  If not, try reducing the step size (either by reducing the fixed step size or by tightening the error
+tolerances)
+} 
+bdclose all
+clear
+clc
+load('C:\Users\cmmcguir\OneDrive - North Carolina State University\iSSRL\Research\variable-stiffness-WEC\wecSim_projects\ONR\p3_500mm\results\P3_sim_sweep_resultsOnly_2025_07_17_14_21_33.mat')

@@ -1,0 +1,91 @@
+# encoding: utf-8
+# 2024 R2
+SetScriptVersion(Version="24.2.133")
+template1 = GetTemplate(TemplateName="External Model")
+system1 = template1.CreateSystem()
+system1.Delete()
+template2 = GetTemplate(TemplateName="Geometry")
+system2 = template2.CreateSystem()
+geometry1 = system2.GetContainer(ComponentName="Geometry")
+geometry1.SetFile(
+    FilePath="C:/Users/cmmcguir/OneDrive - North Carolina State University/iSSRL/Research/variable-stiffness-WEC/wave_tank_testing/wave_tank_test_system_v3/plunger1_simple.SLDPRT",
+    PlugInName="SOLIDWORKS[19260]")
+template3 = GetTemplate(
+    TemplateName="Hydrodynamic Diffraction",
+    Solver="AQWA")
+geometryComponent1 = system2.GetComponent(Name="Geometry")
+system3 = template3.CreateSystem(
+    ComponentsToShare=[geometryComponent1],
+    Position="Right",
+    RelativeTo=system2)
+string1 = geometry1.GetGeometryFileAndSaveData()
+geometryComponent1.Refresh()
+modelComponent1 = system3.GetComponent(Name="Model")
+modelComponent1.Refresh()
+model1 = system3.GetContainer(ComponentName="Model")
+model1.Edit()
+geometryComponent1.Update(AllDependencies=True)
+geometry1.UpdateCAD()
+geometryComponent1.Update(AllDependencies=True)
+geometry1.SetFile(
+    FilePath="C:/Users/cmmcguir/OneDrive - North Carolina State University/iSSRL/Research/variable-stiffness-WEC/wave_tank_testing/wave_tank_test_system_v3/plunger1_simple.SLDPRT",
+    PlugInName="SOLIDWORKS[19260]")
+geometryComponent1.Update(AllDependencies=True)
+geometryComponent1.Reset()
+geometry1.SetFile(
+    FilePath="C:/Users/cmmcguir/OneDrive - North Carolina State University/iSSRL/Research/variable-stiffness-WEC/wave_tank_testing/wave_tank_test_system_v3/plunger1_simple.SLDPRT",
+    PlugInName="SOLIDWORKS[19260]")
+string2 = geometry1.GetGeometryFileAndSaveData()
+modelComponent1.Refresh()
+model1.Edit()
+geometryComponent1.Reset()
+geometry1.SetFile(
+    FilePath="C:/Users/cmmcguir/OneDrive - North Carolina State University/iSSRL/Research/variable-stiffness-WEC/wave_tank_testing/wave_tank_test_system_v3/plunger1_simple.SLDPRT",
+    PlugInName="SOLIDWORKS[19260]")
+string3 = geometry1.GetGeometryFileAndSaveData()
+modelComponent1.Refresh()
+model1.Edit()
+geometryComponent1.Reset()
+geometry1.SetFile(
+    FilePath="C:/Users/cmmcguir/Documents/WEC-Sim/Projects/plunger2_buoy/geometry/plunger2_simple.SLDPRT",
+    PlugInName="SOLIDWORKS[19260]")
+string4 = geometry1.GetGeometryFileAndSaveData()
+modelComponent1.Refresh()
+model1.Edit()
+Save(Overwrite=True)
+geometryComponent1.Reset()
+geometry1.SetFile(
+    FilePath="C:/Users/cmmcguir/Documents/WEC-Sim/Projects/plunger2_buoy/geometry/plunger2_simple.SLDPRT",
+    PlugInName="SOLIDWORKS[19260]")
+string5 = geometry1.GetGeometryFileAndSaveData()
+modelComponent1.Refresh()
+model1.Edit()
+geometry1.SetFile(
+    FilePath="C:/Users/cmmcguir/Documents/WEC-Sim/Projects/plunger2_buoy/geometry/plunger2_simple.SLDPRT",
+    PlugInName="SOLIDWORKS[19260]")
+geometryComponent1.Reset()
+geometry1.SetFile(
+    FilePath="C:/Users/cmmcguir/Documents/WEC-Sim/Projects/plunger2_buoy/geometry/plunger2_simple.SLDPRT",
+    PlugInName="SOLIDWORKS[19260]")
+string6 = geometry1.GetGeometryFileAndSaveData()
+modelComponent1.Refresh()
+model1.Edit()
+geometryComponent1.Reset()
+geometry1.SetFile(
+    FilePath="C:/Users/cmmcguir/Documents/WEC-Sim/Projects/plunger2_buoy/geometry/plunger2_simple.SLDPRT",
+    PlugInName="SOLIDWORKS[19260]")
+string7 = geometry1.GetGeometryFileAndSaveData()
+modelComponent1.Refresh()
+model1.Edit()
+template4 = GetTemplate(
+    TemplateName="Hydrodynamic Response",
+    Solver="AQWA")
+geometryComponent2 = system3.GetComponent(Name="Geometry")
+solutionComponent1 = system3.GetComponent(Name="Solution")
+componentTemplate1 = GetComponentTemplate(Name="AQWASetupTHCellTemplate")
+system4 = template4.CreateSystem(
+    ComponentsToShare=[geometryComponent2, modelComponent1],
+    DataTransferFrom=[Set(FromComponent=solutionComponent1, TransferName=None, ToComponentTemplate=componentTemplate1)],
+    Position="Right",
+    RelativeTo=system3)
+Save(Overwrite=True)

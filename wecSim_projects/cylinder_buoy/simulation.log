@@ -1,0 +1,53 @@
+
+WEC-Sim Input From Standard wecSimInputFile.m Of Case Directory... 
+WEC-Sim: An open-source code for simulating wave energy converters
+Version: 6.1
+
+Initializing the Simulation Class...
+	Case Dir: C:\Users\Carson\OneDrive - North Carolina State University\iSSRL\Research\variable-stiffness-WEC\wecSim_projects\cylinder_buoy 
+
+	 location undefined, set halfway between follower.location and base.location 
+Elapsed time is 0.126844 seconds.
+
+WEC-Sim Pre-processing ...   
+Elapsed time is 0.070509 seconds.
+
+WEC-Sim Simulation Settings:
+	Start Time                     (sec) = 0
+	End Time                       (sec) = 500
+	Time Step Size                 (sec) = 0.005
+	Ramp Function Time             (sec) = 90
+	 Number of Time Steps     = 100000 
+
+Wave Environment: 
+	Wave Type                            = Regular Waves (Constant Hydrodynamic Coefficients)
+	Wave Height, height (m)                   = 0.5
+	Wave Period, period (sec)                 = 6.5
+
+List of Body: Number of Bodies = 1 
+
+	***** Body Number 1, Name: body1 *****
+	Body CG                          (m) = [-0,0,-3]
+	Body Mass                       (kg) = 9455 
+	Body Moments of Inertia       (kgm2) = [55143,55143,2250]
+	Body Products of Inertia      (kgm2) = [0,0,0]
+
+List of PTO(s): Number of PTOs = 1 
+
+	***** PTO Name: PTO1 *****
+	PTO Stiffness           (N/m;Nm/rad) = 15000
+	PTO Damping           (Ns/m;Nsm/rad) = 500
+
+List of Constraint(s): Number of Constraints = 2 
+
+	***** Constraint Name: Constraint1 *****
+
+	***** Constraint Name: Constraint2 *****
+
+
+Simulating the WEC device defined in the SimMechanics model C:\Users\Carson\OneDrive - North Carolina State University\iSSRL\Research\variable-stiffness-WEC\wecSim_projects\cylinder_buoy\cylinder_buoy_1D_sim.slx...   
+Elapsed time is 0.023445 seconds.
+Elapsed time is 21.149390 seconds.
+
+Post-processing and saving...   
+Elapsed time is 0.063024 seconds.

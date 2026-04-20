@@ -1,0 +1,36 @@
+# encoding: utf-8
+# 2023 R2
+SetScriptVersion(Version="23.2.142")
+system1 = GetSystem(Name="AQW")
+geometry1 = system1.GetContainer(ComponentName="Geometry")
+string1 = geometry1.GetGeometryFileAndSaveData()
+model1 = system1.GetContainer(ComponentName="Model")
+model1.Edit()
+geometry1.Edit()
+system2 = system1.Duplicate(
+    ComponentsToShare=[],
+    RelativeTo=system1)
+system2.Delete()
+template1 = GetTemplate(TemplateName="Geometry")
+geometryComponent1 = system1.GetComponent(Name="Geometry")
+system3 = template1.CreateSystem(
+    ComponentsToShare=[geometryComponent1],
+    Position="Right",
+    RelativeTo=system1)
+template2 = GetTemplate(
+    TemplateName="Hydrodynamic Diffraction",
+    Solver="AQWA")
+geometryComponent2 = system3.GetComponent(Name="Geometry")
+system4 = template2.CreateSystem(
+    ComponentsToShare=[geometryComponent2],
+    Position="Right",
+    RelativeTo=system3)
+string2 = geometry1.GetGeometryFileAndSaveData()
+geometryComponent1.Refresh()
+modelComponent1 = system4.GetComponent(Name="Model")
+modelComponent1.Refresh()
+model2 = system4.GetContainer(ComponentName="Model")
+model2.Edit()
+Save(Overwrite=True)
+Save(Overwrite=True)
+Open(FilePath="C:/Users/cmmcguir/Documents/WEC-Sim/Projects/plunger1_buoy/P1_buoy_workbench.wbpj")

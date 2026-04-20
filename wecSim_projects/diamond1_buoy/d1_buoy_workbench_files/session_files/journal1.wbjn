@@ -1,0 +1,12 @@
+# encoding: utf-8
+# 2024 R2
+SetScriptVersion(Version="24.2.133")
+Save(Overwrite=True)
+template1 = GetTemplate(TemplateName="Geometry")
+system1 = template1.CreateSystem()
+geometry1 = system1.GetContainer(ComponentName="Geometry")
+geometry1.SetFile(
+    FilePath="C:/Users/cmmcguir/OneDrive - North Carolina State University/iSSRL/Research/variable-stiffness-WEC/wecSim_projects/diamond1_buoy/geometry/diamond1_simple.SLDPRT",
+    PlugInName="SOLIDWORKS[25428]")
+Save(Overwrite=True)
+Open(FilePath="C:/Users/cmmcguir/OneDrive - North Carolina State University/iSSRL/Research/variable-stiffness-WEC/wecSim_projects/plunger2_buoy/P2_buoy_workbench.wbpj")

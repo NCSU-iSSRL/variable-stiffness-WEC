@@ -1,0 +1,52 @@
+# encoding: utf-8
+# 2024 R2
+SetScriptVersion(Version="24.2.133")
+template1 = GetTemplate(
+    TemplateName="Hydrodynamic Diffraction",
+    Solver="AQWA")
+system1 = GetSystem(Name="Geom")
+geometryComponent1 = system1.GetComponent(Name="Geometry")
+system2 = template1.CreateSystem(
+    ComponentsToShare=[geometryComponent1],
+    Position="Right",
+    RelativeTo=system1)
+geometry1 = system1.GetContainer(ComponentName="Geometry")
+string1 = geometry1.GetGeometryFileAndSaveData()
+geometryComponent1.Refresh()
+modelComponent1 = system2.GetComponent(Name="Model")
+modelComponent1.Refresh()
+model1 = system2.GetContainer(ComponentName="Model")
+model1.Edit()
+geometryComponent1.Update(AllDependencies=True)
+string2 = geometry1.GetGeometryFileAndSaveData()
+model1.Edit()
+geometryComponent1.Reset()
+geometry1.SetFile(
+    FilePath="C:/Users/cmmcguir/OneDrive - North Carolina State University/iSSRL/Research/variable-stiffness-WEC/wecSim_projects/diamond1_buoy/geometry/diamond1_simple.SLDPRT",
+    PlugInName="SOLIDWORKS[25428]")
+string3 = geometry1.GetGeometryFileAndSaveData()
+modelComponent1.Refresh()
+model1.Edit()
+Save(Overwrite=True)
+Save(Overwrite=True)
+Save(Overwrite=True)
+geometryComponent1.Reset()
+geometry1.SetFile(
+    FilePath="C:/Users/cmmcguir/OneDrive - North Carolina State University/iSSRL/Research/variable-stiffness-WEC/wecSim_projects/diamond1_buoy/geometry/diamond1_simple.SLDPRT",
+    PlugInName="SOLIDWORKS[25428]")
+string4 = geometry1.GetGeometryFileAndSaveData()
+modelComponent1.Refresh()
+model1.Edit()
+geometryComponent1.Reset()
+geometry1.SetFile(
+    FilePath="C:/Users/cmmcguir/OneDrive - North Carolina State University/iSSRL/Research/variable-stiffness-WEC/wecSim_projects/diamond1_buoy/geometry/diamond1_simple.SLDPRT",
+    PlugInName="SOLIDWORKS[25428]")
+string5 = geometry1.GetGeometryFileAndSaveData()
+modelComponent1.Refresh()
+model1.Edit()
+Save(Overwrite=True)
+Save(Overwrite=True)
+Open(FilePath="C:/Users/cmmcguir/OneDrive - North Carolina State University/iSSRL/Research/variable-stiffness-WEC/wecSim_projects/plunger2_buoy/P2_buoy_workbench.wbpj")
+Save(Overwrite=True)
+Save(Overwrite=True)
+Open(FilePath="C:/Users/cmmcguir/OneDrive - North Carolina State University/iSSRL/Research/variable-stiffness-WEC/wecSim_projects/plunger2_buoy/P2_buoy_workbench.wbpj")

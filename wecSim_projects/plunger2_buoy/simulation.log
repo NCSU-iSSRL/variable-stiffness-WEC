@@ -1,0 +1,114 @@
+
+WEC-Sim Input From Standard wecSimInputFile.m Of Case Directory... 
+WEC-Sim: An open-source code for simulating wave energy converters
+Version: 6.1
+
+Initializing the Simulation Class...
+	Case Dir: C:\Users\cmmcguir\OneDrive - North Carolina State University\iSSRL\Research\variable-stiffness-WEC\wecSim_projects\plunger2_buoy 
+
+simu = 
+
+  <a href="matlab:helpPopup('simulationClass')" style="font-weight:bold">simulationClass</a> with properties:
+
+                 b2b: 0
+               cicDt: [1×0 double]
+          cicEndTime: 60
+          domainSize: 200
+                  dt: 0.1000
+               dtOut: [1×0 double]
+             endTime: 30
+            explorer: 'on'
+             gravity: 9.8100
+          mcrMatFile: [1×0 char]
+        mcrExcelFile: [1×0 char]
+                mode: 'normal'
+           morisonDt: [1×0 double]
+         nonlinearDt: [1×0 double]
+            paraview: [1×1 struct]
+            pressure: 0
+            rampTime: 15
+      rateTransition: 'on'
+        reloadH5Data: 0
+                 rho: 1000
+       saveStructure: 0
+            saveText: 0
+       saveWorkspace: 1
+    simMechanicsFile: 'plunger2.slx'
+              solver: 'ode4'
+          stateSpace: 0
+                 FIR: 0
+           startTime: 0
+           zeroCross: 'DisableAll'
+           outputDir: '.\output'
+             caseDir: 'C:\Users\cmmcguir\OneDrive - North Carolina State University\iSSRL\Research\variable-stiffness-WEC\wecSim_projects\plunger2_buoy'
+           numCables: 0
+      numConstraints: 0
+       numDragBodies: 0
+      numHydroBodies: 0
+          numMoorDyn: 0
+         numMoorings: 0
+             numPtos: 0
+           numPtoSim: 0
+                time: 0
+            caseFile: []
+           cicLength: []
+             cicTime: []
+                date: 18-Feb-2026 12:34:54
+           gitCommit: []
+               maxIt: []
+           wsVersion: '6.1'
+
+
+	 location undefined, set halfway between follower.location and base.location 
+
+	 cable(i).cableLength undefined and cable(i).preTension undefined. 
+ Elapsed time is 0.260646 seconds.
+
+WEC-Sim Pre-processing ...   
+[Warning: Because water depth is specified in the wecSimInputFile, the water depth from the BEM data is ignored] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('waveClass/setWaterDepth', 'C:\Users\cmmcguir\Documents\WEC-Sim-6.1.2\source\objects\waveClass.m', 571)" style="font-weight:bold">waveClass/setWaterDepth</a> (<a href="matlab: opentoline('C:\Users\cmmcguir\Documents\WEC-Sim-6.1.2\source\objects\waveClass.m',571,0)">line 571</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('waveClass/setup', 'C:\Users\cmmcguir\Documents\WEC-Sim-6.1.2\source\objects\waveClass.m', 253)" style="font-weight:bold">waveClass/setup</a> (<a href="matlab: opentoline('C:\Users\cmmcguir\Documents\WEC-Sim-6.1.2\source\objects\waveClass.m',253,0)">line 253</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('initializeWecSim', 'C:\Users\cmmcguir\Documents\WEC-Sim-6.1.2\source\functions\initializeWecSim.m', 263)" style="font-weight:bold">initializeWecSim</a> (<a href="matlab: opentoline('C:\Users\cmmcguir\Documents\WEC-Sim-6.1.2\source\functions\initializeWecSim.m',263,0)">line 263</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run', 'C:\Program Files\MATLAB\R2025b\toolbox\matlab\lang\run.m', 112)" style="font-weight:bold">run</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2025b\toolbox\matlab\lang\run.m',112,0)">line 112</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('wecSim', 'C:\Users\cmmcguir\Documents\WEC-Sim-6.1.2\source\wecSim.m', 40)" style="font-weight:bold">wecSim</a> (<a href="matlab: opentoline('C:\Users\cmmcguir\Documents\WEC-Sim-6.1.2\source\wecSim.m',40,0)">line 40</a>)] 
+Elapsed time is 0.133495 seconds.
+
+WEC-Sim Simulation Settings:
+	Start Time                     (sec) = 0
+	End Time                       (sec) = 30
+	Time Step Size                 (sec) = 0.01
+	Ramp Function Time             (sec) = 15
+	 Number of Time Steps     = 3000 
+
+Wave Environment: 
+	Wave Type                            = Regular Waves (Constant Hydrodynamic Coefficients)
+	Wave Height, height (m)                   = 0
+	Wave Period, period (sec)                 = 1
+
+List of Body: Number of Bodies = 1 
+
+	***** Body Number 1, Name: body1 *****
+	Body CG                          (m) = [-0,0,-0.19]
+	Body Mass                       (kg) = 11.138 
+	Body Moments of Inertia       (kgm2) = [0.0606,0.0606,0.0466]
+	Body Products of Inertia      (kgm2) = [0,0,0]
+
+List of PTO(s): Number of PTOs = 1 
+
+	***** PTO Name: PTO1 *****
+	PTO Stiffness           (N/m;Nm/rad) = 0
+	PTO Damping           (Ns/m;Nsm/rad) = 0
+
+List of Constraint(s): Number of Constraints = 2 
+
+	***** Constraint Name: Constraint1 *****
+
+	***** Constraint Name: Constraint2 *****
+
+
+Simulating the WEC device defined in the SimMechanics model C:\Users\cmmcguir\OneDrive - North Carolina State University\iSSRL\Research\variable-stiffness-WEC\wecSim_projects\plunger2_buoy\plunger2.slx...   
+Elapsed time is 0.502985 seconds.
+Elapsed time is 18.534407 seconds.
+
+Post-processing and saving...   
+Elapsed time is 0.074836 seconds.

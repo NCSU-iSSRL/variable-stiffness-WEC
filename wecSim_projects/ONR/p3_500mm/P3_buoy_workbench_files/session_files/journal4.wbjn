@@ -1,0 +1,22 @@
+# encoding: utf-8
+# 2025 R1
+SetScriptVersion(Version="25.1.122")
+system1 = GetSystem(Name="Geom")
+geometry1 = system1.GetContainer(ComponentName="Geometry")
+string1 = geometry1.GetGeometryFileAndSaveData()
+system2 = GetSystem(Name="AQW")
+solution1 = system2.GetContainer(ComponentName="Solution")
+solution1.Edit()
+template1 = GetTemplate(
+    TemplateName="Hydrodynamic Response",
+    Solver="AQWA")
+geometryComponent1 = system2.GetComponent(Name="Geometry")
+modelComponent1 = system2.GetComponent(Name="Model")
+solutionComponent1 = system2.GetComponent(Name="Solution")
+componentTemplate1 = GetComponentTemplate(Name="AQWASetupTHCellTemplate")
+system3 = template1.CreateSystem(
+    ComponentsToShare=[geometryComponent1, modelComponent1],
+    DataTransferFrom=[Set(FromComponent=solutionComponent1, TransferName=None, ToComponentTemplate=componentTemplate1)],
+    Position="Right",
+    RelativeTo=system2)
+Save(Overwrite=True)

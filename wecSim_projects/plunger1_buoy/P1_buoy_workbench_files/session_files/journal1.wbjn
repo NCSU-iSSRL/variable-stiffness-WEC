@@ -1,0 +1,13 @@
+# encoding: utf-8
+# 2023 R2
+SetScriptVersion(Version="23.2.142")
+template1 = GetTemplate(
+    TemplateName="Hydrodynamic Response",
+    Solver="AQWA")
+system1 = template1.CreateSystem()
+Save(Overwrite=True)
+Save(Overwrite=True)
+geometry1 = system1.GetContainer(ComponentName="Geometry")
+geometry1.Edit()
+Save(Overwrite=True)
+Open(FilePath="C:/Users/cmmcguir/Documents/WEC-Sim/Projects/Adaptive_WEC_CSI_buoy/csi_small_scale_buoy.wbpj")

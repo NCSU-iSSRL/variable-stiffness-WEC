@@ -1,0 +1,31 @@
+# encoding: utf-8
+# 2025 R1
+SetScriptVersion(Version="25.1.122")
+system1 = GetSystem(Name="Geom")
+geometry1 = system1.GetContainer(ComponentName="Geometry")
+geometry1.SetFile(FilePath="C:/Users/cmmcguir/OneDrive - North Carolina State University/iSSRL/Research/variable-stiffness-WEC/wecSim_projects/ONR_proposal/plunger3_buoy_500mm/geometry/plunger3_500mm_simple_2.SLDPRT")
+string1 = geometry1.GetGeometryFileAndSaveData()
+system2 = GetSystem(Name="AQW")
+modelComponent1 = system2.GetComponent(Name="Model")
+modelComponent1.Refresh()
+model1 = system2.GetContainer(ComponentName="Model")
+model1.Edit()
+Save(Overwrite=True)
+geometry1.UpdateCAD()
+string2 = geometry1.GetGeometryFileAndSaveData()
+modelComponent1.Refresh()
+model1.Edit()
+geometry1.SetFile(
+    FilePath="C:/Users/cmmcguir/OneDrive - North Carolina State University/iSSRL/Research/variable-stiffness-WEC/wecSim_projects/ONR_proposal/plunger3_buoy_500mm/geometry/plunger3_500mm_simple_2.SLDPRT",
+    PlugInName="SOLIDWORKS[17656]")
+geometryComponent1 = system1.GetComponent(Name="Geometry")
+geometryComponent1.Reset()
+geometry1.SetFile(
+    FilePath="C:/Users/cmmcguir/OneDrive - North Carolina State University/iSSRL/Research/variable-stiffness-WEC/wecSim_projects/ONR_proposal/plunger3_buoy_500mm/geometry/plunger3_500mm_simple_2.SLDPRT",
+    PlugInName="SOLIDWORKS[17656]")
+string3 = geometry1.GetGeometryFileAndSaveData()
+modelComponent1.Refresh()
+model1.Edit()
+geometry1.UpdateCAD()
+modelComponent1.Update(AllDependencies=True)
+Save(Overwrite=True)

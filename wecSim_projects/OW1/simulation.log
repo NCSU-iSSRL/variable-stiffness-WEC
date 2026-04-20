@@ -1,0 +1,58 @@
+
+WEC-Sim Input From Standard wecSimInputFile.m Of Case Directory... 
+WEC-Sim: An open-source code for simulating wave energy converters
+Version: 6.1
+
+Initializing the Simulation Class...
+	Case Dir: C:\Users\cmmcguir\OneDrive - North Carolina State University\iSSRL\Research\variable-stiffness-WEC\wecSim_projects\OW1 
+
+	 location undefined, set halfway between follower.location and base.location 
+Elapsed time is 1.130348 seconds.
+
+WEC-Sim Pre-processing ...   
+[Warning: "body.morisonElement.z" is not used for "body.morisonElement.option = 1". Check body 1 element 1] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('initializeWecSim', 'C:\Users\cmmcguir\Documents\WEC-Sim-6.1.2\source\functions\initializeWecSim.m', 372)" style="font-weight:bold">initializeWecSim</a> (<a href="matlab: opentoline('C:\Users\cmmcguir\Documents\WEC-Sim-6.1.2\source\functions\initializeWecSim.m',372,0)">line 372</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run', 'C:\Program Files\MATLAB\R2025b\toolbox\matlab\lang\run.m', 112)" style="font-weight:bold">run</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2025b\toolbox\matlab\lang\run.m',112,0)">line 112</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('wecSim', 'C:\Users\cmmcguir\Documents\WEC-Sim-6.1.2\source\wecSim.m', 40)" style="font-weight:bold">wecSim</a> (<a href="matlab: opentoline('C:\Users\cmmcguir\Documents\WEC-Sim-6.1.2\source\wecSim.m',40,0)">line 40</a>)] 
+Elapsed time is 0.558610 seconds.
+
+WEC-Sim Simulation Settings:
+	Start Time                     (sec) = 0
+	End Time                       (sec) = 120
+	Time Step Size                 (sec) = 0.005
+	Ramp Function Time             (sec) = 15
+	Convolution Integral Interval  (sec) = 4
+	 Number of Time Steps     = 24000 
+
+Wave Environment: 
+	Wave Type                            = Regular Waves (Convolution Integral Calculation)
+	Wave Height, height (m)                   = 1
+	Wave Period, period (sec)                 = 7
+
+List of Body: Number of Bodies = 1 
+
+	***** Body Number 1, Name: body1 *****
+	Body CG                          (m) = [0,0,-0.06]
+	Body Mass                       (kg) = 13.26 
+	Body Moments of Inertia       (kgm2) = [0.197,0.197,0.26]
+	Body Products of Inertia      (kgm2) = [0,0,0]
+
+List of PTO(s): Number of PTOs = 1 
+
+	***** PTO Name: PTO1 *****
+	PTO Stiffness           (N/m;Nm/rad) = 0
+	PTO Damping           (Ns/m;Nsm/rad) = 30
+
+List of Constraint(s): Number of Constraints = 2 
+
+	***** Constraint Name: Constraint1 *****
+
+	***** Constraint Name: Constraint2 *****
+
+
+Simulating the WEC device defined in the SimMechanics model C:\Users\cmmcguir\OneDrive - North Carolina State University\iSSRL\Research\variable-stiffness-WEC\wecSim_projects\OW1\OW1_rev1.slx...   
+Elapsed time is 0.109546 seconds.
+Elapsed time is 50.306855 seconds.
+
+Post-processing and saving...   
+Elapsed time is 0.262165 seconds.
